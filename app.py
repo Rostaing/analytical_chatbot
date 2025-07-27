@@ -382,7 +382,7 @@ def load_from_db(db_type, conn_params, query):
     except Exception as e:
         st.error(t("notifications.db_conn_error").format(e=e)); return None
 
-# --- Fonctions de Nettoyage (inchangées) ---
+# --- Fonctions de Nettoyage ---
 def remove_outliers_iqr(df, column):
     if pd.api.types.is_numeric_dtype(df[column]):
         Q1, Q3 = df[column].quantile(0.25), df[column].quantile(0.75)
@@ -498,7 +498,7 @@ def run_chatbot_modal():
     if c2.button(t("chatbot_modal.close_button"), use_container_width=True, type="primary"):
         st.session_state.show_chat_modal = False; st.rerun()
 
-# --- LOGIQUE D'AFFICHAGE DES MODALES (CORRIGÉE) ---
+# --- LOGIQUE D'AFFICHAGE DES MODALES ---
 if st.session_state.get('show_reset_modal', False):
     run_reset_confirmation_modal()
 elif st.session_state.get('show_chat_modal', False):
