@@ -1,0 +1,29 @@
+streamlit
+pandas
+numpy
+scikit-learn
+google-generativeai
+python-dotenv
+pypdf
+openpyxl
+plotly
+python-dotenv
+streamlit_nightly==1.38.1.dev20240830
+# --- Database Connectors ---
+sqlalchemy
+# For PostgreSQL
+psycopg2-binary
+# For MySQL
+mysql-connector-python
+# For SQL Server (requires ODBC drivers)
+pyodbc
+# For Oracle (requires Oracle Instant Client)
+oracledb
+# For MongoDB
+pymongo
+# For Neo4j
+neo4j
+# For ChromaDB
+chromadb-client
+# For .sql files
+duckdb
