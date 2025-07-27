@@ -137,7 +137,7 @@ The application needs an API key to communicate with Google's Gemini models.
 ### 6. Launch the Application
 Once the installation is complete, run the app with the command:
 ```bash
-streamlit run chat.py
+streamlit run app.py
 ```
 Open your browser to the URL displayed (usually `http://localhost:8501`).
 
